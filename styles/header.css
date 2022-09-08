@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -21,4 +22,38 @@
 
 .container__imagem {
     padding: 1em;
+}
+
+.lista__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked~.lista__menu {
+    display: block;
+}
+
+.lista__menu--titulo , 
+.lista__menu--item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista__menu--titulo {
+    color: var(--amarelo);
+    font-weight: 700;
+}
+
+.lista__menu--link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container__botao {
+    display: none;
 }
