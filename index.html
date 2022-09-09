@@ -67,9 +67,63 @@
 
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-            </div>    
+            </div>
+
+            <div class="card">
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também tenha interesse por...</h3>
+                        <h2 class="descricao__titulo--livro">Angular 11 e Firebase</h2>
+                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google</p>
+                    </div>
+                    <img src="img/Angular.svg" alt="" class="descricao__imagem">
+                </div>
+                <div class="card__botoes">
+                    <ul class="lista__botoes">
+                        <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+                    </ul>
+                    <a href="#" class="botao__ancora">Saiba mais</a>
+                </div>
+            </div>          
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">Mais vendidos</h2>
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javacript"></div>
+                    <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Livros sobre gestão da Alura"></div>
+                    <div class="swiper-slide"><img src="img/UX.svg" alt="Livro sobre UX Design "></div>
+                    <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="Livro sobre Metricas"></div>
+                    <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança no Front-end"></div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <p class="estrelas"><img src="img/Estrelinhas.svg" alt="Estrelas de pontuação"></p>
+                        <h3 class="descricao__titulo">Autora do Mês</h3>
+                        <h2 class="descricao__titulo--livro">Juliana Agarikov</h2>
+                        <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    </div>
+                    <img src="img/Perfil.svg" alt="" class="descricao__imagem">
+                </div>
+                <div class="card__botoes">
+                    <ul class="lista__botoes">
+                        <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+                    </ul>
+                    <a href="#" class="botao__ancora">Saiba mais</a>
+                </div>
+            </div>          
+    </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
